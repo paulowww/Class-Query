@@ -24,11 +24,11 @@ This script connects to the database using mysqli method further down has some u
 otherwise things will get messy and git won't download the repo into a non-empty folder
 3. copy the contents of the extracted class-query repository into /var/www ! In this tutorial we don't use a sub-folder,  so your index.php should go into /var/www !
 Best way to do is cloning via git: `git clone https://github.com/offboard/class-query.git /var/www`
-4. Run the three SQL statements in the *_installation/sql_statements/* run in the right order
+4. Run the three SQL statements in the *_installation/* run in the right order
 
 #### CONFIGS IN THE CODE:
 
-In *lib/Query/config.inc.php*:
+In *lib/Query/src/Config.php*:
 
 5. enter your database credentials in $DB_USER, $DB_PASS etc.
 6. enter your charset in $charset (we can do the configuration before using the code).
